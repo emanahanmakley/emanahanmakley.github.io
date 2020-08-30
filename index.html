@@ -4,12 +4,34 @@
 <head>
     <meta charset="utf-8">
     <title>Emily's Text Adventure</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style type="text/css">
+        #output {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>
-        Emily's Text Adventure
-    </h1>
+    <div class="container">
+        <h1>
+            Emily's Text Adventure
+        </h1>
+        <div id="output">
+        </div>
+        <form id="player-input-form" action="#">
+            <input id="input-textbox" type="text" class="form-control">
+            <br>
+            <button type="submit" class="btn btn-primary">
+                Submit
+            </button>
+        </form>
+    </div>
 </body>
 
 </html>
